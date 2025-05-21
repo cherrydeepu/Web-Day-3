@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>APJ Abdul Kalam - Charity Trust</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: #f9f9f9;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  /* Overlay for better text contrast */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: transparent;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 3px solid #0b0b00;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    border: 5px solid #0b0b00;
+    object-fit: cover;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 700;
+    color: #f9f9f9;
+  }
+
+  header .contact {
+    margin-left: auto;
+    font-size: 1rem;
+    color: #ccc;
+    text-align: right;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #073ff4;
+    color: #fff;
+  }
+
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 2px solid #0b0b00;
+    border-bottom: 2px solid #0b0b00;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+  }
+
+  /* Simple marquee animation */
+  .marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .info-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .info-item {
+    background: rgba(7, 63, 244, 0.8);
+    padding: 15px 20px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(7, 63, 244, 0.7);
+  }
+
+  ul.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  ul.links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  ul.links li a {
+    color: #f0f0f0;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid #131100;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+
+  ul.links li a:hover {
+    background-color: #073ff4;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <img src="APJ.jpg" alt="APJ Abdul Kalam" />
+      <h1>APJ Abdul Kalam</h1>
+      <div class="contact">
+        Charity Trust<br />
+        mail: abdulkalamapj@gmail.com
+      </div>
+    </header>
+    <nav aria-label="Primary navigation">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <div class="marquee-container" aria-live="polite" aria-atomic="true">
+      <div class="marquee-text">Scientist and Former President of India</div>
+    </div>
+    <div class="info-grid" role="region" aria-label="Key attributes">
+      <div class="info-item">Scientist</div>
+      <div class="info-item">President</div>
+      <div class="info-item">Awards</div>
+    </div>
+    <ul class="links" role="navigation" aria-label="External links">
+      <li><a href="https://www.google.com/">APJ</a></li>
+    </ul>
+  </div>
+</body>
+</html>
