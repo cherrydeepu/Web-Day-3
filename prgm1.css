@@ -1,0 +1,14 @@
+.container{
+    background-color: aqua;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-around;
+}
+.p{
+    color: blue;
+    font-size: 30;
+    padding: 15px;
+    display: inline;
+}
